@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "CommonJS",
+    "moduleResolution": "NodeNext",
+    "experimentalDecorators": true,
+    "allowJs": false,
+    "checkJs": false,
+    "declaration": true,
+    "rootDir": "./types",
+    "outDir": "./src",
+    "strict": false,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "noImplicitThis": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "lib": ["es2020", "DOM"]
+  },
+  "include": ["types/**/*"],
+  "exclude": ["node_modules", "dist", "test", "src"]
+}

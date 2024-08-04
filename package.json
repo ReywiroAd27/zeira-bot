@@ -1,0 +1,81 @@
+{
+  "name": "zhour-bot",
+  "version": "1.0.0",
+  "description": "the implementation of baileys module from whiskeysockets",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "build:all": "tsc && typedoc",
+    "build:docs": "typedoc",
+    "build:tsc": "tsc",
+    "js:test": "tsc && node test/index",
+    "js:test-mobile": "node --inspect -r ts-node/register test/index --mobile",
+    "js:test-pairing": "node --inspect -r ts-node/register test/index --pairing",
+    "ts:test": "node --inspect -r ts-node/register test/index.ts",
+    "ts:test-mobile": "node --inspect -r ts-node/register test/index.ts --mobile",
+    "ts:test-pairing": "node --inspect -r ts-node/register test/index.ts --pairing",
+    "build": "tsc"
+  },
+  "exports": {
+    ".": {
+      "require": "./src/index.js",
+      "import": "./src/index.js",
+      "types": "./src/index.d.ts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReywiroAd27/Zhours-bot.git"
+  },
+  "keywords": [
+    "whiskeysocket/baileys",
+    "baileys",
+    "wabot",
+    "bot",
+    "whatsapp",
+    "typescript",
+    "javascript"
+  ],
+  "author": "ReywiroAd27",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReywiroAd27/Zhours-bot/issues"
+  },
+  "homepage": "https://github.com/ReywiroAd27/Zhours-bot#readme",
+  "devDependencies": {
+    "@adiwajshing/keyed-db": "^0.2.4",
+    "@types/chalk": "^2.2.0",
+    "@types/node": "^20.14.9",
+    "@types/node-cache": "^4.2.5",
+    "@types/pino": "^7.0.5",
+    "@types/similarity": "^1.2.3",
+    "axios": "^1.7.2",
+    "link-preview-js": "^3.0.5",
+    "open": "^10.1.0",
+    "qrcode-terminal": "^0.12.0",
+    "typescript": "^5.5.3",
+    "ts-node": "^10.9.2",
+    "typedoc": "^0.26.5"
+  },
+  "dependencies": {
+    "baileys": "^6.7.5",
+    "file-type": "^16.5.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "fund": "^1.0.0",
+    "jimp": "^0.16.13",
+    "moment-timezone": "^0.5.43",
+    "node-webpmux": "^3.1.7",
+    "similarity": "^1.2.1"
+  },
+  "databaseType": {
+    "mongoDB": {
+      "name": "mongoose",
+      "version": "7.3.4"
+    },
+    "firebase": {
+      "name": "firebase-admin",
+      "version": 20
+    }
+  }
+}
